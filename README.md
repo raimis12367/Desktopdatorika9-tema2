@@ -1,2 +1,3 @@
 Zvaigžņu kovbojs, lai uzvarētu ir jādabu zvaigznes. Spēles mērķis ir dabūt cik vien daudz zvaigznes cik iespējams, mapi sauc Desktop/datorika9-tema2, lai atvērtu tikai jauzspiež uz mapī Desktop/datorika9-tema2. Spēle ir paredzēta, lai uzlabotu koordināciju un reakcijas ātrumu. Lai spēlētu, izmanto bulttaustiņus, lai pārvietotos pa ekrānu un savāktu zvaigznes. Katru reizi, kad tiek savākta zvaigzne, tiek pievienoti punkti. . Lai uzvarētu, ir jācenšas savākt pēc iespējas vairāk zvaigžņu pirms spēles beigām.
 Es kā backround colour izvēlējos  #a7c4e6, jo man patīk gaiši zila krāsa un es kā button colour un backround colour izvēlējos  #190a2b; #fc0765 jo šīm krāsām ir liels kontrasts. 
+Klasesbiedri, Gustavs un Hugo, teica ka ir salasāmi un es uzlaboju kontrastu noteikumiem
