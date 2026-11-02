@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zvaigžņu Kovbojs</title>
+<style>
+/* Pamata izkārtojums — šīs rindas nemaini */
+body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
+button, input { font: inherit; padding: 10px 16px; margin: 6px 0; cursor: pointer; }
+img, audio { max-width: 100%; }
+[hidden] { display: none !important; }
+
+/* NOFORMĒ ŠEIT: pielieto 2.1. un 2.2. nodarbībā apgūto CSS */
+body {
+  background-color: #a7c4e6;
+  color: #da90e4;
+}
+
+h1 {
+  color: #2113ee;font-size: 36px;text-align: center;
+}
+
+.noteikumi {
+  background-color: #3ee6ae;
+  color: #fffbfb;
+  padding: 16px;border-radius: 12px;
+}
+
+.laukums {
+  width: 360px; 
+  padding: 20px;
+  border: 2px solid #dfeb3c;
+  border-radius: 12px;
+  background-color: #263341;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  background-color: #fc0765;
+  color: #190a2b;
+  border: 8px solid #190a2b;
+}
+</style>
+</head>
+<body>
+<h1>Zvaigžņu Kovbojs</h1>
+<h3></h3>Īss spēles mērķa apraksts spēlētājam.</h3>
+<section class="noteikumi">
+  <h2>Noteikumi</h2>
+  <p>Savāc piecas zvaigznes. Spied uz zvaigznes, lai iegūtu punktus.</p>
+  <p>Kad būsi dabūjis zvaigzni atskanēs klikšķis un tiks pievienots punkts. </p>
+  <p>Uzvara ir pie pieciem punktiem.</p>
+  <p>Spēle beidzas, kad kovbojs iegūst visus punktus vai , kad beidzas laiks.</p>
+  <p>WASD  - W - uz augšu, A - pa kreisi, S - uz leju, D - pa labi</p>
+</section>
+<div class="laukums">
+  <h2>Spēles laukums</h2>
+  <img src="atteli/atteli/kovbojs.png" alt="kovbojs priekš spēles" width="128">
+  <p>Skaņas efekta nozīme spēlē: kad dzirdi klikšķi, esi dabūjis vienu zvaigzni.</p>
+  <audio controls src="skanas/klikskis.wav"></audio>
+  <p id="punkti">Zvaigznes: 0</p>
+  <button onclick="savakt()">DABŪ ZVAIGZNI</button>
+</div>
+<script>
+// Gatava punktu poga — šo skriptu nemaini.
+let punkti = 0;
+function savakt() {
+  punkti = punkti + 1;
+  document.getElementById("punkti").textContent = "Zvaigznes: " + punkti;
+}
+</script>
+</body>
+</html>
